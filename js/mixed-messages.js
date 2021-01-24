@@ -1,5 +1,6 @@
-function getRandomInteger {
-    const random = Math.floor((Math.random()*10)+1)
+const random = Math.floor((Math.random()*10)+1);
+
+const getMessage = random => {
     if (random === 1) {
         return 'Your future looks bleak.'
     } else if (random === 2) {
@@ -24,3 +25,5 @@ function getRandomInteger {
         return 'Jesus is the answer.'
     }
 }
+
+document.getElementById("button").onclick = getMessage;
